@@ -1,5 +1,5 @@
 {
-    "./src/**/*.ts": [
+    "./lib/**/*.js": [
         "npx eslint --fix",
         "npx prettier --write"
     ]
