@@ -2,6 +2,8 @@
 
 Pretty log message style API: color, format, and cursor.
 
+![Example pretty log](./example.png)
+
 ``` js
 prettyLog.BOLD.fg.WHITE.bg.color(128, 128, 255)(
   ` ${prettyLog.UNDERLINE("Example")} `
