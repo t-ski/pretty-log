@@ -2,16 +2,19 @@
 
 Pretty log message style API: color, format, and cursor.
 
+``` cli
+npm install t-ski/pretty-log
+```
+
+**Example Log**
+
 ![Example pretty log](./example.png)
 
+**Example Source**
 ``` js
 prettyLog.BOLD.fg.WHITE.bg.color(128, 128, 255)(
   ` ${prettyLog.UNDERLINE("Example")} `
 )
-```
-
-``` cli
-npm install t-ski/pretty-log
 ```
 
 ## Synopsis
