@@ -1,11 +1,11 @@
 {
     "name": "@t-ski/pretty-log",
     "version": "0.1.0",
-    "description": " Simple, nestable log message formatter.",
+    "description": "Pretty log message style interface: color, format, and cursor.",
     "author": "Thassilo Martin Schiepanski",
 	"homepage": "https://github.com/@t-ski/pretty-log#readme",
     "keywords": [
-		"console", "log", "formatted"
+		"console", "log", "color", "format"
 	],
 	"repository": {
 		"type": "git",
@@ -24,7 +24,8 @@
 		"lint:fix": "npx eslint --fix ./lib/*.js",
 		"format": "npx prettier --check ./lib/*.js",
 		"format:fix": "npx prettier --write ./lib/**/*.js",
-		"test": ""
+		"test": "node ./test/pretty-log.test.js",
+		"example": "node ./examples.js"
     },
     "devDependencies": {
 		"@eslint/js": "^9.2.0",
