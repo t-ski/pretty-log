@@ -8,7 +8,7 @@ npm install t-ski/pretty-log
 
 **Example Log**
 
-![Example pretty log](./example.png)
+<img src="./example.png" alt="Pretty log example" width="385">
 
 **Example Source**
 ``` js
