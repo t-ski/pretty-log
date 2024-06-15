@@ -1,6 +1,6 @@
 # Pretty Log
 
-Pretty log message style API: color, format, and cursor.
+Pretty log messages with color, format, and cursor manipulation.
 
 ``` cli
 npm install t-ski/pretty-log
