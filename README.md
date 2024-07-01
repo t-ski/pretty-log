@@ -1,9 +1,12 @@
 # Pretty Log
 
+![NPM Version](https://img.shields.io/npm/v/%40t-ski%2Fpretty-log?logo=npm)
+![GitHub License](https://img.shields.io/github/license/t-ski/pretty-log)
+
 Pretty log messages with color, format, and cursor manipulation.
 
 ``` cli
-npm install t-ski/pretty-log
+npm install @t-ski/pretty-log
 ```
 
 **Example Log**
