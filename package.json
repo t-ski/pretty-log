@@ -1,6 +1,6 @@
 {
     "name": "@t-ski/pretty-log",
-    "version": "0.0.1",
+    "version": "0.1.0",
     "description": "Pretty log messages with color, format, and cursor manipulation.",
     "author": "Thassilo Martin Schiepanski",
     "homepage": "https://github.com/t-ski/pretty-log#readme",
