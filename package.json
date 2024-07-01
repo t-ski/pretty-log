@@ -1,34 +1,43 @@
 {
     "name": "@t-ski/pretty-log",
-    "version": "0.1.0",
-    "description": "Pretty log message style interface: color, format, and cursor.",
+    "version": "0.0.1",
+    "description": "Pretty log messages with color, format, and cursor manipulation.",
     "author": "Thassilo Martin Schiepanski",
-	"homepage": "https://github.com/t-ski/pretty-log#readme",
+    "homepage": "https://github.com/t-ski/pretty-log#readme",
     "keywords": [
-		"console", "log", "color", "format"
-	],
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/t-ski/pretty-log.git"
-	},
-	"bugs": {
-		"url": "https://github.com/t-ski/pretty-log/issues"
-	},
-	"main": "./lib/api.js",
+        "console",
+        "log",
+        "color",
+        "format"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/t-ski/pretty-log.git"
+    },
+    "bugs": {
+        "url": "https://github.com/t-ski/pretty-log/issues"
+    },
+    "main": "./lib/api.js",
     "files": [
-        "./lib/"
+        "./lib/",
+        "./example.png"
     ],
     "scripts": {
-		"prepare": "npx husky install",
-		"lint": "npx eslint ./lib/*.js",
-		"lint:fix": "npx eslint --fix ./lib/*.js",
-		"test": "node ./test/pretty-log.test.js",
-		"example": "node ./examples.js"
+        "prepare": "npx husky install",
+        "lint": "npx eslint ./lib/*.js",
+        "lint:fix": "npx eslint --fix ./lib/*.js",
+        "example": "node ./examples.js",
+        "test": "node ./test/pretty-log.test.js",
+        "prepublish": "npm run lint && npm run test",
+        "release:minor": "npx release --minor",
+        "release:patch": "npx release --patch"
     },
     "devDependencies": {
-		"@eslint/js": "^9.2.0",
-		"eslint": "^8.57.0",
-		"husky": "^9.0.11",
-		"lint-staged": "^15.2.2"
-    }
+        "@t-ski/gh-npm-release": "github:t-ski/gh-npm-release",
+        "@eslint/js": "^9.2.0",
+        "eslint": "^8.57.0",
+        "husky": "^9.0.11",
+        "lint-staged": "^15.2.2"
+    },
+    "license": "MIT"
 }
